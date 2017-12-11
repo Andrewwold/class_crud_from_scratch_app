@@ -1,0 +1,14 @@
+<h1>Pages#authors</h1>
+    <% @authors.each do |work| %>
+      
+    
+        <%= work.author %>
+        <%= link_to 'Show', work %>
+        <%= link_to 'Edit', edit_blog_path(work) %>
+        <%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %>
+ 
+  <% end %>
+
+
+<br>
+ 

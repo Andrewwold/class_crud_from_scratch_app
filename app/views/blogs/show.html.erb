@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<p id="notice"><%= notice %></p>
+
+			<p>
+				<strong>Title:</strong>
+				<%= @blog_item.title %>
+			</p>
+
+			<p>
+				<strong>Author:</strong>
+				<%= @blog_item.author %>
+			</p>
+
+			<p>
+				<strong>Subject:</strong>
+				<%= @blog_item.subject %>
+			</p>
+
+			<p>
+				<strong>body:</strong>
+				<%= @blog_item.body %>
+			</p>
+
+			<p>
+				<strong>image:</strong>
+				<%= @blog_item.image %>
+			</p>
+		</div>
+	</div>
+</div>
+
+<%= link_to 'Edit', edit_blog_path(@blog_item) %> |
+<%= link_to 'Back', blogs_path %>
